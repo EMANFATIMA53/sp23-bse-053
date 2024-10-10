@@ -1,146 +1,320 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SAPPHIRE.COM</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>sapphire.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <style>
+      .carousel-caption {
+          text-align: left;
+          left: 10%; /* Adjust this percentage to move further left */
+      }
+
+      .circle-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        
+  </style>
+  
   </head>
   <body>
-    <h1>SAPPHIRE</h1>
-    <!-- search bar -->
-    <form class="form-inline">
-        <div class="input-group ms-10">
-            <input type="search" class="form-control w-2" placeholder="Search your favourites" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Search</button>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+          <a class="navbar-brand fs-1 fw-bold" href="#">SAPPHIRE</a>
+          <form class="d-flex mx-auto w-50">
+              <input class="form-control me-2" type="search" placeholder="FIND YOUR FAVOURITES" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="d-flex">
+              <a href="#" class="nav-link"><i class="fas fa-truck fs-4"></i></a>
+              <a href="#" class="nav-link"><i class="fas fa-user fs-4"></i></a>
+              <a href="#" class="nav-link position-relative">
+                  <i class="fas fa-shopping-bag fs-4"></i>
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white">0</span>
+              </a>
           </div>
-        </div>
-      </form>
-      
-    <!-- navigation bar -->
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">NEW IN</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">KIDS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">WOMEN</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">WATCHES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SHOES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ACCESSORIES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">HOME </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BEST OF 2024</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">SPECIAL OFFERS</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">THE EDIT</a>
-        </li>
-      </ul>
-      <!-- CROUSEL -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>ready to wear</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>day to day</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>festive 24</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <h1>WHAT'S </h1>
-      <h1> NEW</h1>
-      <!-- pic in circle -->
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizontal Circular Images</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-        <!-- Flexbox to align images horizontally -->
-        <div class="d-flex justify-content-center flex-wrap">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/sarees.png?v=1726127002&width=400" class="rounded-circle mr-3" alt="Circular Image 1" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/what_s-new--ajrak-edit.jpg?v=1726739569&width=400" class="rounded-circle mr-3" alt="Circular Image 2" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/US-velvet.jpg?v=1726126092&width=400" class="rounded-circle mr-3" alt="Circular Image 3" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/Man-US_1178899b-27be-437a-9e74-2bc453032525.jpg?v=1726126092&width=400" class="rounded-circle mr-3" alt="Circular Image 4" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/what_s-new--kids.jpg?v=1726741559&width=400" class="rounded-circle mr-3" alt="Circular Image 5" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/WEST_f90297eb-b045-4cd2-908d-4ef66f20c62a.jpg?v=1726126092&width=400" class="rounded-circle mr-3" alt="Circular Image 6" width="150" height="150">
-            <img src="https://pk.sapphireonline.pk/cdn/shop/files/Mommy-_-me_b590dad1-ba55-43c5-9487-408e404393e8.jpg?v=1726126092&width=400" class="rounded-circle" alt="Circular Image 7" width="150" height="150">
+  </nav>
+  <br>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-top">
+      <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">NEW IN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">WOMAN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">MAN</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">KIDS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">BEAUTY</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">ACCESSORIES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-danger me-2" href="#">SPECIAL OFFERS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-dark me-2" href="#">THE EDIT</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <br>
+
+  <!-- crousel -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Slider_Banner_US .webp" class="d-block w-100" alt="">
+            <div class="carousel-caption text-start">
+                <h1>FALL/WINTER '24</h1>
+                <div class="btn-group">
+                    <button class="btn btn-light m-2">daily</button>
+                    <button class="btn btn-light m-2">signature</button>
+                    <button class="btn btn-light m-2">statement</button>
+                    <button class="btn btn-light m-2">unstitched</button>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
-<h1 style="text-align: center;">SHOP BY SATEGORY</h1>
-<!-- GRID -->
+        <div class="carousel-item">
+            <img src="RTW_2db28960-2834-4323-94d3-7017f1d2f961.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-start">
+                <h1>READY TO WEAR</h1>
+                <h3>FALL/WINTER '24 NEW ARRIVALS</h3>
+                <div class="btn-group">
+                    <button class="btn btn-light m-2">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
 
-  <div class="row">
-    <!-- Image 1 -->
-    <div class="col-3">
-        <img src="kid" class="img-fluid" alt="Image 1">
-    </div>
-    <!-- Image 2 -->
-    <div class="col-3">
-        <img src="beauty" class="img-fluid" alt="Image 2">
-    </div>
-    <!-- Image 3 -->
-    <div class="col-3">
-        <img src="modest wear" class="img-fluid" alt="Image 3">
-    </div>
-    <!-- Image 4 -->
-    <div class="col-3">
-        <img src="home" class="img-fluid" alt="Image 4">
+        <div class="carousel-item">
+            <img src="Slider_Banner_MAN.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-start">
+                <h1>MAN 24</h1>
+                <h3>FALL/WINTER '24</h3>
+                <div class="btn-group">
+                    <button class="btn btn-light m-2">unstitched</button>
+                    <button class="btn btn-light m-2">stitched</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="west_9ecf110f-e204-4c9a-b980-a794d79c65a1.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-start">
+                <h1>WEST</h1>
+                <h3>FALL/WINTER '24</h3>
+                <div class="btn-group">
+                    <button class="btn btn-light m-2">MODERN FEMME</button>
+                    <button class="btn btn-light m-2">SMART CASUAL</button>
+                    <button class="btn btn-light m-2">ATHLEISURE</button>
+                    <button class="btn btn-light m-2">OUTERWEAR</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
-<h1 style="text-align: center;">TRENDING</h1>
+
+<!-- whats new -->
+
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-12 col-md-2">
+          <h2 class="fw-bold" style="font-size: 36px;">
+              WHAT'S NEW
+          </h2>
+      </div>
+      <div class="col-12 col-md-10 d-flex align-items-center">
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/shibori-craftw.jpg?v=1728551233&width=400" class="circle-img" alt="Person wearing Shibori Craft RTW">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Shibori Craft</div>
+              <div class="text-muted" style="font-size: 14px;">RTW</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/styled-by-iqra_5b0178f7-04f8-4e3e-b3a2-a10a48d5a71d.jpg?v=1728543104&width=400" class="circle-img" alt="Person wearing Styled By Iqra RTW">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Styled By Iqra</div>
+              <div class="text-muted" style="font-size: 14px;">RTW</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/south-lawn.jpg?v=1728549191&width=400" class="circle-img" alt="Person wearing The South Collection Unstitched">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">The South Collection</div>
+              <div class="text-muted" style="font-size: 14px;">Unstitched</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/man-outfits_f435cf1b-af9e-41ff-9008-22c0e8d7df96.jpg?v=1728551312&width=400" class="circle-img" alt="Person wearing Outfits Men's Stitched">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Outfits</div>
+              <div class="text-muted" style="font-size: 14px;">Men's Stitched</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/shawls_8ef67e00-07b0-4d29-83b2-31530fcd0886.jpg?v=1728543285&width=400" class="circle-img" alt="Person wearing Men's Shawls">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Men's Shawls</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/sweaters-_-cardigans.jpg?v=1728543138&width=400" class="circle-img" alt="Person wearing Sweater & Cardigans WEST">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Sweater & Cardigans</div>
+              <div class="text-muted" style="font-size: 14px;">WEST</div>
+          </div>
+          <div class="text-center mx-3">
+              <img src="https://pk.sapphireonline.pk/cdn/shop/files/core_ceeff3af-aa47-4961-9669-e3c07f9dba48.jpg?v=1727939764&width=400" class="circle-img" alt="People wearing Core Collection WEST">
+              <div class="mt-2 fw-medium" style="font-size: 16px;">Core Collection</div>
+              <div class="text-muted" style="font-size: 14px;">WEST</div>
+          </div>
+      </div>
+  </div>
+  <br>
+         <div class="text-center">
+              <h2>shop by category</h2>
+         </div>
+  <br>
+</div> 
+
+<!-- grid system -->
+
+<div id="gridCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+  <div class="carousel-inner">
+      <!-- First Slide with Grid -->
+      <div class="carousel-item active">
+          <div class="container">
+              <div class="row">
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/kids_db46a497-4830-4b4a-9629-8911694582a3.jpg?v=1727937086&width=800" class="d-block w-100" alt="Image 1">
+                      <h5>kids</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-fragrance.jpg?v=1723112862&width=800" class="d-block w-100" alt="Image 2">
+                      <h5>beauty</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/modest-wear_a7a13560-457b-450b-b142-2aa6feb85a2d.jpg?v=1727937085&width=800" class="d-block w-100" alt="Image 3">
+                      <h5>modest wear</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-home_8532312c-cad4-4121-a657-3206a4af4eae.jpg?v=1723112863&width=800" class="d-block w-100" alt="Image 4">
+                      <h5>home</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Second Slide with Grid -->
+      <div class="carousel-item">
+          <div class="container">
+              <div class="row">
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/accessories_b7f7664a-e671-48ad-ada8-c0d0533c45dd.jpg?v=1727937085&width=800" class="d-block w-100" alt="Image 5">
+                      <h5>accessories</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/sbc-unstitched_59e0f4bc-dff0-4f2e-8337-2d9f83285c9c.jpg?v=1727938861&width=800" class="d-block w-100" alt="Image 6">
+                      <h5>Unstitched</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/RTW-sbc.gif?v=1728542309&width=800" class="d-block w-100" alt="Image 7">
+                      <h5>ready to wear</h5>
+                  </div>
+                  <div class="col-6 col-md-3 mb-4">
+                      <img src="https://pk.sapphireonline.pk/cdn/shop/files/west_85059027-cf88-4fe3-b30c-b21efed51c0d.jpg?v=1727937085&width=800" class="d-block w-100" alt="Image 8">
+                      <h5>west</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+      <br>
+          <div class="text-center">
+             <h2>trending</h2>
+          </div>
+    </div>
+    <br>
+
+    <!-- 2nd grid system -->
+
+    <div id="gridCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+      <div class="carousel-inner">
+        <!-- First Slide with Grid -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 mb-4">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/USM1P24V4123_3_7bab383a-303b-4878-9bbe-ba2ee15de1f9.jpg?v=1728528980&width=600" class="d-block w-100" alt="Image 1">
+                <h5>kids</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/MSTEKR24V442_2_bb6ff07a-cd65-424f-8ea1-825009bd967b.jpg?v=1728528978&width=600" class="d-block w-100" alt="Image 2">
+                <h5>beauty</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/USM1P24V4124_1_874d076a-1e0d-4150-baaa-e8bc4d0ee5c6.jpg?v=1728528986&width=600" class="d-block w-100" alt="Image 3">
+                <h5>modest wear</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/0MSTKR24CPL7_2_16e7f81d-6927-4ce5-a42d-7b38cdf7780f.jpg?v=1728528979&width=600" class="d-block w-100" alt="Image 3">
+                <h5>home</h5>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        
+    <!-- Second Slide with Grid -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/2STSTW24V422_2.jpg?v=1728528980&width=600" class="d-block w-100" alt="Image 4">
+                <h5>accessories</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/02PESGW24V42_1.jpg?v=1728528977&width=600" class="d-block w-100" alt="Image 5">
+                <h5>Unstitched</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/2STDYW24V417_2.jpg?v=1728528978&width=600" class="d-block w-100" alt="Image 6">
+                <h5>ready to wear</h5>
+              </div>
+              <div class="col-md-3">
+                <img src="https://pk.sapphireonline.pk/cdn/shop/files/2STSTW24V418_2.jpg?v=1728528976&width=600" class="d-block w-100" alt="Image 7">
+                <h5>west</h5>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+      
+          <br><br>
+          <div class="text-center">
+            <h2>more to explore</h2>
+         </div>
+          
+
+
+
+
+
+
   </body>
-</html>
