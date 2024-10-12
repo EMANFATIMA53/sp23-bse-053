@@ -102,7 +102,7 @@
             $('#show_cityerror').css('color', 'red');
             return false;
         }
-        if (city.length <= 3 || city.length >= 30) {
+        if (city.length <= 3 || city.length >= 25) {
             $('#show_cityerror').html("** City name must be correct");
             $('#show_cityerror').css('color', 'red');
             return false;
@@ -116,7 +116,7 @@
             return false;
         }
 
-        
+
         alert("Form submitted successfully!"); 
     });
 
@@ -130,4 +130,3 @@
 
 </body>
 </html>
-
