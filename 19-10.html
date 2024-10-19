@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$('#mybutton').hover(
+    function(){
+        $(this).document("color","pink");
+},
+function(){
+        $(this).document("color","purple");
+},
+
+);
+});
+</script>
+</head>
+<body>
+
+<button id="mybutton">hover over me</button>
+
+</body>
+</html>
