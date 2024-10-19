@@ -69,7 +69,7 @@
       event.preventDefault(); // Prevent form submission
 
       
-      // Name validation
+// Name validation
       var user = $('#name').val();
         if (user == "") {
             $('#show_nameerror').html('** The username must be filled.');
@@ -82,7 +82,7 @@
             return false;
         }
 
-        // Email validation
+ // Email validation
         var email = $('#email').val();
         if (email == "") {
             $('#show_mailerror').html('** The email must be filled');
@@ -95,7 +95,7 @@
             return false; // Stop further execution
         }
 
-        // City validation
+ // City validation
         var city = $('#city').val();
         if (city == "") {
             $('#show_cityerror').html("** Write city name");
@@ -108,7 +108,7 @@
             return false;
         }
 
-        // Address validation
+// Address validation
         var address = $('#address').val();
         if (address == "") {
             $('#show_addresserror').html("** Address must be filled.");
@@ -120,7 +120,7 @@
         alert("Form submitted successfully!"); 
     });
 
-    // Email validation function
+// Email validation function
     function validateEmail(email) {
         return email.includes('@') && email.includes('.'); 
     }
