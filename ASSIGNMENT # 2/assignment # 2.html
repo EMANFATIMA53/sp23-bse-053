@@ -90,7 +90,7 @@
             return false; // Stop further execution
         }
         if (!validateEmail(email)) {
-            $('#show_mailerror').html('** The email must be valid');
+            $('#show_mailerror').html('** The email must have @ and . ');
             $('#show_mailerror').css('color', 'red');
             return false; // Stop further execution
         }
