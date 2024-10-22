@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <link href="./midexam.css" rel="stylesheet"/>
+
+       <script src="./midexam.js"></script>
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      
+       
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+         <img alt="Profile Picture" class="profile-pic" height="350" src="mid.jpg" width="300"/>
+
+         <div class="info-box">
+            <p>Name: EMAN FATIMA</p>
+            <p>Job Title: SOFTWARE ENGINEER</p>
+            <p>Email: emanft11@example.com</p>
+            <p>Location: Lahore, Punjab</p>
+           </div>
+     
+         <div class="info-box">
+          <p>Name: EMAN FATIMA</p>
+          <p>Job Title: SOFTWARE ENGINEER</p>
+          <p>Email: emanft11@example.com</p>
+          <p>Location: Lahore, Punjab</p>
+         </div>
+
+         <div class="intro" id="introText">This is your introduction text!</div>
+     
+         <div class="contact-info">
+          <p class="section-title">CONTACT</p>
+          <p>LAHORE, PUNJAB</p>
+          <p>emanft11@example.com</p>
+          <p>+92 12345678</p>
+          <p>www.interestingsite.com</p>
+         </div>
+     
+         <div class="education">
+          <p class="section-title">EDUCATION</p>
+          <p>STUDENT OF SOFTWARE ENGINEERING FROM CUI LAHORE</p>
+          <p>Master of Arts Graphic Design</p>
+          <p>SPECIALITY IN WEB DESIGNING</p>
+          <p>GAME DEVELOPMENT</p>
+         </div>
+     
+         <div class="skills">
+          <p class="section-title">SKILLS</p>
+          <p>Design software</p>
+          <div class="skills-bar">
+           <div class="skill-1"></div>
+          </div>
+          <p>Visual communication</p>
+          <div class="skills-bar">
+           <div class="skill-2"></div>
+          </div>
+          <p>Branding</p>
+          <div class="skills-bar">
+           <div class="skill-3"></div>
+          </div>
+         </div>
+        </div>
+     
+        <div class="right-column">
+         <p class="subtitle">GRAPHIC DESIGNER</p>
+         <p class="name">Manasi Goyal</p>
+         <div class="objective">
+          <p class="section-title">OBJECTIVE</p>
+          <p>To leverage my creativity and design skills to develop visually compelling and effective designs that meet the needs and exceed the expectations of clients.</p>
+         </div>
+     
+         <div class="experience">
+          <p class="section-title">EXPERIENCE</p>
+     
+          <div class="experience-item">
+           <h3>FRONT END DEVELOPER</h3>
+           <p>DEVSINC Co. |LAHORE,PAKISTAN | 2023-2027</p>
+           <p>Collaborate with cross-functional teams, including copywriters, producers, and account managers, to develop integrated campaigns across various media channels.</p>
+          </div>
+     
+          <div class="experience-item">
+           <h3>SENIOR DESIGNER</h3>
+           <p>SYSTEM | LAHORE,PAKISTAN | 2023-2027</p>
+           <p>Led design projects from concept to completion, collaborating with clients on various design projects, including branding, editorial, and environmental design.</p>
+          </div>
+     
+          <div class="experience-item">
+           <h3>GRAPHIC DESIGNER</h3>
+           <p>Kala Aaj | lahore,punjab | 2023-2027X</p>
+           <p>Worked with cross-functional teams, including marketing, product development, and digital, to ensure the effective execution of design projects.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+
+       <script>
+        $(document).ready(function() {
+        $(".info-box").show(); 
+
+        $(".profile-pic").hover(
+            function() {
+                $(".info-box").fadeIn();
+            },
+            function() {
+                $(".info-box").fadeOut();
+            }
+        );
+    });
+       </script>
+    
+    
+</body>
+</html>
+
