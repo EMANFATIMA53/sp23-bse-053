@@ -1,0 +1,54 @@
+
+
+.carousel-caption {
+  text-align: left;
+  left: 10%; /* Adjust this percentage to move further left */
+}
+
+.circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.circle-img {
+    background-color: #FFF9E6;
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: black; /* Change to desired color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Optional: Make text bold */
+    padding: 10px 15px; /* Adds spacing around links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #091017; /* Change hover color (e.g., Bootstrap blue) */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+.fancy-button {
+    background-color: gray;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Adding space between button and icons */
+.navbar .fancy-button {
+    margin-left: 150px; /* Adjust this value to control the distance */
+}
+
+.sign-in-container {
+    text-align: right; /* Align text to the right */
+}
+
+
+
+
+
+

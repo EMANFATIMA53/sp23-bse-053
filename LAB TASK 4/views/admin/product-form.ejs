@@ -1,0 +1,58 @@
+<form action="/admin/products/create" method="POST" enctype="multipart/form-data">
+  <label>Title:</label>
+  <input type="text" name="name" required>
+
+  <label>Description:</label>
+  <textarea name="description" required></textarea>
+
+  <label>Price:</label>
+  <input type="number" name="price" required>
+
+  <label>Category:</label>
+  <select name="category" required>
+      <% categories.forEach(category => { %>
+          <option value="<%= category._id %>"><%= category.categoryName %></option>
+      <% }); %>
+  </select>
+
+  <label>Image:</label>
+  <input type="file" name="file" required>
+
+  <label>Featured:</label>
+  <input type="checkbox" name="isFeatured">
+
+  <button type="submit">Create Product</button>
+</form>
+
+
+<style>
+  /* Add spacing between form elements */
+  form div {
+      margin-bottom: 15px;
+  }
+
+  label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+  input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+  }
+
+  button {
+      padding: 10px 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+  }
+
+  button:hover {
+      background-color: #45a049;
+  }
+</style>

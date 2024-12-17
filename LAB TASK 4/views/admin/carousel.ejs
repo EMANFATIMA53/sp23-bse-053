@@ -1,0 +1,29 @@
+<h1>Carousel Images</h1>
+<a href="/admin/carousel/new" class="btn btn-primary mb-3">Add New Carousel</a>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Image</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% carousels.forEach((carousel, index) => { %>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td>
+          <img src="<%= carousel.image %>" width="100" />
+        </td>
+        <td>
+          <a href="/admin/carousel/edit/<%= carousel._id %>" class="btn btn-warning">Edit</a>
+          <form action="/admin/carousel/delete/<%= carousel._id %>" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+

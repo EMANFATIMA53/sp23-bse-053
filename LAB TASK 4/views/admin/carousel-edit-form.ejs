@@ -1,0 +1,9 @@
+<h1>Edit Carousel Image</h1>
+
+<form action="/admin/carousel/edit/<%= carousel._id %>" method="POST" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="image" class="form-label">Upload New Image</label>
+    <input type="file" class="form-control" name="image" required />
+  </div>
+  <button type="submit" class="btn btn-warning">Update Carousel</button>
+</form>
