@@ -37,8 +37,7 @@ let productsRouter = require("./routes/admin/products.router");
 app.use("/admin/products", productsRouter);
 let categoryRouter = require("./routes/admin/category.router");
 app.use("/admin/categories", categoryRouter);
-let carouselRouter = require("./routes/admin/carousel.router");
-app.use("/admin/carousels", carouselRouter);
+
 
 // API Routes
 const api = process.env.API_URL;
