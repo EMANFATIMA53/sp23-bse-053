@@ -92,55 +92,7 @@ async function seedDB() {
     
   ];
 
-  //--------------------Large Handags
 
-  const accessories_titles = [
-    "charm",
-    "horizon eyeshadow pallete",
-    "pixie",
-    "oomph",
-    
-  ];
-  const accessories_imgs = [
-    "https://pk.sapphireonline.pk/cdn/shop/files/POST3_2.jpg?v=1719585598&width=400",
-    "https://pk.sapphireonline.pk/cdn/shop/files/SmokeyGlow_1.jpg?v=1719584344&width=600",
-    "https://pk.sapphireonline.pk/cdn/shop/files/000000BML010_1.jpg?v=1727694328&width=400",
-    "https://pk.sapphireonline.pk/cdn/shop/files/OOMPH_561ee023-86a5-4af4-8d73-0b8db432b2d3.jpg?v=1706528222&width=1024",
-    
-  ];
-
-  //-----------------------Purses
-  const home_titles = [
-    "Begonia - Quilt Cover",
-    "Peach Pearl - Bed Spread",
-    "Pearled Ivory - Quilt Cover",
-    "Pastel Nectar - Bed Spread",
-    
-  ];
-  const home_imgs = [
-    "https://pk.sapphireonline.pk/cdn/shop/files/HTBLQC313285_2.jpg?v=1729079391&width=600",
-    "https://pk.sapphireonline.pk/cdn/shop/files/HTBLBT313278_1.jpg?v=1729079097&width=400",
-    "https://pk.sapphireonline.pk/cdn/shop/files/HTBLBT313269_1.jpg?v=1725620923&width=400",
-    "https://pk.sapphireonline.pk/cdn/shop/files/HTBLBB313283_2.jpg?v=1729078733&width=400",
-    
-  ];
-
-  //-----------------Totes
-
-  const newin_titles = [
-    "ribbed hoodie",
-    "modest wear",
-    "chunky cardigan",
-    "ribbed cardigan",
-    
-  ];
-  const newin_imgs = [
-    "https://pk.sapphireonline.pk/cdn/shop/files/WBTM24V60089_2.jpg?v=1730875415&width=600",
-    "https://pk.sapphireonline.pk/cdn/shop/files/HIJAB24V7005_1.jpg?v=1731312247&width=600",
-    "https://pk.sapphireonline.pk/cdn/shop/files/WTOP24V60178.4.jpg?v=1730875538&width=600",
-    "https://pk.sapphireonline.pk/cdn/shop/files/WTOP24V60177.1.jpg?v=1730875515&width=600",
-    
-  ];
 
   async function seedProducts(titlesArr, imgsArr, categStr) {
     try {
@@ -173,13 +125,7 @@ async function seedDB() {
   await seedProducts(men_titles, men_imgs, "men");
   await seedProducts(kids_titles, kids_imgs, "kids");
   await seedProducts(beauty_titles, beauty_imgs, "beauty");
-  await seedProducts(
-    accessories_titles,
-    accessories_imgs,
-    "accessories"
-  );
-  await seedProducts(home_titles, home_imgs, "home");
-  await seedProducts(newin_titles, newin_imgs, "newin");
+  
 
   await closeDB();
 }

@@ -24,9 +24,6 @@ async function seedDB() {
   await seedCateg("men");
   await seedCateg("kids");
   await seedCateg("beauty");
-  await seedCateg("accessories");
-  await seedCateg("home");
-  await seedCateg("newin");
   await closeDB();
 }
 
